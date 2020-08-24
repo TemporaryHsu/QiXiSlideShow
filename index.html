@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script>
       function isMobile() {
@@ -12,7 +13,7 @@
         return check;
       };
 
-      if (check){
+      if (isMobile()){
         alert("請用電腦螢幕觀賞");
         document.querySelector("body").style.display = "none";
       }
