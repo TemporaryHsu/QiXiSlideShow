@@ -12,11 +12,6 @@
         })(navigator.userAgent||navigator.vendor||window.opera);
         return check;
       };
-
-      if (isMobile()){
-        alert("請用電腦螢幕觀賞");
-        document.querySelector("body").style.display = "none";
-      }
     </script>
   </head>
   <body>
@@ -101,5 +96,12 @@
         <p>送妳一張笑臉。</p>
       </div> 
     </div>
+    <script>
+      console.log(isMobile());
+      if (isMobile()){
+        alert("請用電腦螢幕觀賞");
+        document.querySelector("body").style.display = "none";
+      }
+    </script>
   </body>
 </html>
